@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --fuente: 'Open Sans', sans-serif;
+
+  --primario: #784D3C;
+  --fondo: #f4f4f4;
+  --gris: #9FA6B2;
+  --gris-claro: #c4c4c4;
+  --gris-claro-2: #f0f0f0;
+  --gris-oscuro: #ababab;
+  --blanco: #FFF;
+  --negro: #000;
+  --azul: #1475b0;
+  --azul-oscuro: #135d9e;
+  --error: #F4D6D2;
+  --error-fuente: #691911;
+  --creada: #0B5ED7;
+  --en-proceso: #FFCA2C;
+  --terminada: #157347;
+  --dark-grey: #252525;
+  --dark-grey-1: #3a3a3a;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--fuente);
+  background-color: var(--fondo);
+  font-size: 1.5rem;
+  line-height: 1.5;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+body.dark-theme {
+  background-color: #4f4f4f;
+  color: var(--blanco);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
